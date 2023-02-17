@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800&display=swap');
+*{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+}
+body{
+    padding: 0;
+    margin: 0;
+}
+.navbar{
+    display: grid;
+    grid-template-columns: 1fr 440px 1fr;
+    line-height: 50px;
+    padding: 0 40px;
+    background-color: rgb(62, 219, 219);
+}
+.logo a{
+    text-align: left;
+    font-size: 30px;
+    font-weight: 700;
+    color: white;
+    text-decoration: none;
+}
+.search{
+    text-align: center;
+}
+.addaria{
+    text-align: right;
+}
+.addaria a{
+    padding: 5px 15px;
+    background-color: white;
+    border-radius: 10px;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+.search input[type=search]{
+    width: 340px;height: 30px;
+    margin-right: -5px;
+    border-radius: 10px 0 0 10px ;
+    border: 1px solid rgb(170, 170, 170);
+    padding: 0 10px;
+}
+.search input[type=submit]{
+    width: 80px;height: 30px;
+    border-radius: 0 10px 10px 0;
+    border: 1px solid rgb(170, 170, 170);
+}
+.add-content{
+    margin: 0 auto;
+    margin-top: 50px;
+    width: 400px;
+    padding: 0 8px 0 0;
+}
+.add-content form input[type=text]{
+    width: calc(100%);
+    height: 20px;    
+}
+.formcontent{
+    margin-top: 10px;
+}
+.formcontent input[type=submit]{
+    background-color: rgb(62, 219, 219);
+    border: rgb(12, 138, 138) solid 1px;
+    padding: 6px 22px;
+    font-size: 16px;
+    border-radius: 5px;
+}
+.content-list table{
+    margin: 0px auto;
+    margin-top: 20px;
+    border-collapse:collapse;
+}
+.table-header th{
+    background-color:rgb(62, 219, 219);
+    border: 1px solid rgb(25, 141, 141);
+    padding: 4px 10px;
+    text-align: left;
+}
+td{
+    border: 1px solid rgb(162, 189, 189);
+    padding: 4px 10px; 
+}
+.th-id{
+    width: 30px;
+}
+.th-name{
+    width: 100px;
+}
+.action{
+    display: inline;
+}
+h1{
+    font-size: 24px;
+}
+.detailcontent{
+    padding: 20px 40px;
+}

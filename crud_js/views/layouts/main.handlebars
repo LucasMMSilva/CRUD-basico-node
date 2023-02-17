@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD</title>
+    <link rel="stylesheet" href="css/style.css"> 
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo"><a href="/">CRUD</a></div>
+        <div class="search">
+            <form action="/list/search" method="post">
+                <input type="search" name="search" id="search" placeholder="Buscar por nome">
+                <input type="submit" value="Buscar">
+            </form>
+        </div>
+        <div class="addaria">
+            <a href="/add">Adicionar novo</a>
+        </div>
+    </nav>
+    {{{body}}}
+</body>
+</html>

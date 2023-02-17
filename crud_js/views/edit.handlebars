@@ -1,0 +1,31 @@
+<link rel="stylesheet" href="../css/style.css"> 
+<div class="add-content">
+    <form action="/edit/update" method="post">
+        <input type="hidden" name="id" value="{{data.id}}">
+        <div class="formcontent">
+            <label for="">Nome:</label>
+            <br>
+            <input type="text" name="name" value="{{data.name}}">
+        </div>
+        <div class="formcontent">
+            <label for="">Genero:</label>
+            <br>
+            <input type="radio" name="gender" id="r-m" value="m" {{data2.checkm}}><label for="r-m">Masculino</label>
+            <input type="radio" name="gender" id="r-f" value="f" {{data2.checkf}}><label for="r-f">Feminino</label>
+            <input type="radio" name="gender" id="r-n" value="n" {{data2.checkn}}><label for="r-n">Outro</label>
+        </div>
+        <div class="formcontent">
+            <label for="">Telefone:</label>
+            <br>
+            <input type="text" name="phone" value="{{data.phone}}">
+        </div>
+        <div class="formcontent">
+            <label for="">Email:</label>
+            <br>
+            <input type="text" name="email" value="{{data.email}}">
+        </div>
+        <div class="formcontent">
+            <input type="submit" value="Salvar alterações">
+        </div>
+    </form>
+</div>

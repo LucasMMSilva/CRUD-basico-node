@@ -1,0 +1,36 @@
+<link rel="stylesheet" href="../css/style.css"> 
+<div class="content-list">
+    <table>
+        <tr class="table-header">
+            <th class="td-id">ID</th>
+            <th class="td-name">Nome</th>
+            <th class="td-gender">Sexo</th>
+            <th class="td-phone">Telefone</th>
+            <th class="td-email">Email</th>
+            <th class="td-actions">Ações</th>
+        </tr>
+        {{#each list}}
+        <tr>
+            <td>{{this.id}}</td>
+            <td>{{this.name}}</td>
+            <td>{{this.gender}}</td>
+            <td>{{this.phone}}</td>
+            <td>{{this.email}}</td>
+            <td>
+                <form class="action" action="/details" method="get">
+                    <input type="hidden" name ="id" value="{{this.id}}">
+                    <input type="submit" value="Detalhes">
+                </form>
+                <form class="action" action="/edit" method="get">
+                    <input type="hidden" name ="id" value="{{this.id}}">
+                    <input type="submit" value="Editar">
+                </form>
+                <form class="action" action="/delete" method="post">
+                    <input type="hidden" name="id" value="{{this.id}}">
+                    <input type="submit" value="Deletar">
+                </form>
+            </td>
+        </tr>
+        {{/each}}
+    </table>
+</div>
